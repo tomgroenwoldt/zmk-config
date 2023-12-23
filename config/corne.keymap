@@ -27,29 +27,29 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | | | | | | % |         |  ^  |  &  |  *  |  (  |  )  |   \   |
+// | | | | | |   |         |  ^  |  &  |  *  |  (  |  )  |   \   |
 // | | | | | |   |         |  -  |  =  |  `  |  [  |  ]  |  "|"  |
 // | | | | | |   |         |  _  |  +  |  ~  |  {  |  }  |   $   |
 //       | | |   |         |  !  |  @  |  #  |
                         bindings = <
-   &trans &trans &trans &trans &trans &kp PRCNT      &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
-   &trans &trans &trans &trans &trans &trans         &kp MINUS &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
-   &trans &trans &trans &trans &trans &trans         &kp UNDER &kp PLUS  &kp TILDE       &kp LBRC &kp RBRC &kp RSHFT
-                        &trans &trans &trans         &kp EXCL  &kp AT    &kp HASH
+   &none &none &none &none &none &none      &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
+   &none &none &none &none &none &none         &kp MINUS &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
+   &none &none &none &none &none &none         &kp UNDER &kp PLUS  &kp TILDE       &kp LBRC &kp RBRC &kp DLLR
+                        &none &none &none         &kp EXCL  &kp AT    &kp HASH
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |   | 7 | 8 | 9 |   |   |        |     |     |     |     | | |
+// |   | 7 | 8 | 9 |   | % |        |     |     |     |     | | |
 // |   | 4 | 5 | 6 |   |   |        | LFT | DWN | UP  | RGT | | |
 // | 0 | 1 | 2 | 3 |   |   |        |     |     |     |     | | |
 //             |   |   |   |        |     |     |     |
                         bindings = <
-   &trans &trans &kp N7 &kp N8 &kp N9 &trans     &trans   &trans   &trans &trans    &trans &trans
-   &trans &trans &kp N4 &kp N5 &kp N6 &trans     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &trans &kp N0 &kp N1 &kp N2 &kp N3 &trans     &trans   &trans   &trans &trans    &trans &trans
-                        &trans &trans &trans     &trans   &trans   &trans
+   &none &none &kp N7 &kp N8 &kp N9 &kp PRCNT  &none   &none   &none &none    &none &none
+   &none &none &kp N4 &kp N5 &kp N6 &none     &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+   &none &kp N0 &kp N1 &kp N2 &kp N3 &none     &none   &none   &none &none    &none &none
+                        &none &none &none     &none   &none   &none
                         >;
                 };
         };
