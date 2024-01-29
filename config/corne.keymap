@@ -22,20 +22,20 @@
    &kp ESC    &kp Q &kp W &kp E &kp R    &kp T       &kp Y   &kp U    &kp I     &kp O   &kp P    &kp TAB
    &kp LCTRL  &kp A &kp S &kp D &kp F    &kp G       &kp H   &kp J    &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHIFT &kp Z &kp X &kp C &kp V    &kp B       &kp N   &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-                         &mo 1 &kp RALT &kp SPACE   &kp RET &kp BSPC &mo 2
+                          &mo 1 &kp RALT &kp SPACE   &kp RET &kp BSPC &mo 2
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | | | | | |   |         |  ^  |  &  |  *  |  (  |  )  |   \   |
-// | | | | | |   |         |  -  |  =  |  `  |  [  |  ]  |  "|"  |
-// | | | | | |   |         |  _  |  +  |  ~  |  {  |  }  |   $   |
-//       | | |   |         |  !  |  @  |  #  |
+// | | | |     | |   |         |  ^  |  &  |  *  |  (  |  )  |   \   |
+// | | | | DEL | |   |         |  -  |  =  |  `  |  [  |  ]  |  "|"  |
+// | | | |     | |   |         |  _  |  +  |  ~  |  {  |  }  |   $   |
+//       |     | |   |         |  !  |  @  |  #  |
                         bindings = <
-   &none &none &none &none &none &none      &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
-   &none &none &none &none &none &none         &kp MINUS &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
-   &none &none &none &none &none &none         &kp UNDER &kp PLUS  &kp TILDE       &kp LBRC &kp RBRC &kp DLLR
-                        &none &none &none         &kp EXCL  &kp AT    &kp HASH
+   &none &none &none &none   &none &none         &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
+   &none &none &none &kp DEL &none &none         &kp MINUS &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
+   &none &none &none &none   &none &none         &kp UNDER &kp PLUS  &kp TILDE       &kp LBRC &kp RBRC &kp DLLR
+                     &none   &none &none         &kp EXCL  &kp AT    &kp HASH
                         >;
                 };
 
@@ -46,10 +46,10 @@
 // | 0 | 1 | 2 | 3 |   |   |        |     |     |     |     | | |
 //             |   |   |   |        |     |     |     |
                         bindings = <
-   &none &none &kp N7 &kp N8 &kp N9 &kp PRCNT  &none   &none   &none &none    &none &none
-   &none &none &kp N4 &kp N5 &kp N6 &none     &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
-   &none &kp N0 &kp N1 &kp N2 &kp N3 &none     &none   &none   &none &none    &none &none
-                        &none &none &none     &none   &none   &none
+   &none &none  &kp N7 &kp N8 &kp N9 &kp PRCNT  &none    &none    &none  &none     &none &none
+   &none &none  &kp N4 &kp N5 &kp N6 &none      &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+   &none &kp N0 &kp N1 &kp N2 &kp N3 &none      &none    &none    &none  &none     &none &none
+                       &none  &none  &none      &none    &none    &none
                         >;
                 };
         };
