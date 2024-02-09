@@ -27,15 +27,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | | | |     | |            |                         |  ^  |  &  |  *  |  (  |  )  |   \   |
-// | | | | DEL | |            |                         |  -  |  =  |  `  |  [  |  ]  |  "|"  |
-// | | | |     | | BT_CLR_ALL |                         |  _  |  +  |  ~  |  {  |  }  |   $   |
-//       |     | |            |                         |  !  |  @  |  #  |
+// | | BT 2 | BT 1 | BT 2 | |            |                         |  ^  |  &  |  *  |  (  |  )  |   \   |
+// | |      |      | DEL  | |            |                         |  -  |  =  |  `  |  [  |  ]  |  "|"  |
+// | |      |      |      | | BT_CLR     |                         |  _  |  +  |  ~  |  {  |  }  |   $   |
+//                 |      | |            |                         |  !  |  @  |  #  |
                         bindings = <
-   &none &none &none &none   &none &none                &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
-   &none &none &none &kp DEL &none &none                &kp MINUS &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
-   &none &none &none &none   &none &bt BT_CLR_ALL       &kp UNDER &kp PLUS  &kp TILDE       &kp LBRC &kp RBRC &kp DLLR
-                     &none   &none &none                &kp EXCL  &kp AT    &kp HASH
+   &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 1 &none &none                &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
+   &none &none        &none        &kp DEL      &none &none                &kp MINUS &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
+   &none &none        &none        &none        &none &bt BT_CLR           &kp UNDER &kp PLUS  &kp TILDE       &kp LBRC &kp RBRC &kp DLLR
+                                   &none        &none &none                &kp EXCL  &kp AT    &kp HASH
                         >;
                 };
 
