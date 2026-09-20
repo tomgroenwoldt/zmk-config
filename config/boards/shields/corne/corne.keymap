@@ -41,15 +41,15 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |   | 7 | 8 | 9 |   | % |                    |     |     |     |     | | |
-// |   | 4 | 5 | 6 |   | @ |                    | LFT | DWN | UP  | RGT | | |
-// | 0 | 1 | 2 | 3 |   |   |                    |     |     |     |     | | |
+// |   | ß | 7 | 8 | 9 | % |                    |     |  ü  |     |  ö  | | |
+// |   | ä | 4 | 5 | 6 | @ |                    | LFT | DWN | UP  | RGT | | |
+// |   | 0 | 1 | 2 | 3 |   |                    |     |     |     |     | | |
 //             |   |   |   |                    |     |     |     |
                         bindings = <
-   &none &none  &kp N7 &kp N8 &kp N9 &kp PRCNT  &none    &none    &none  &none     &none &none
-   &none &none  &kp N4 &kp N5 &kp N6 &kp AT     &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
-   &none &kp N0 &kp N1 &kp N2 &kp N3 &none      &none    &none    &none  &none     &none &none
-                       &none  &none  &none      &none    &none    &none
+   &none &kp RA(S) &kp N7 &kp N8 &kp N9 &kp PRCNT  &none    &kp RA(Y) &none  &kp RA(P) &none &none
+   &none &kp RA(Q) &kp N4 &kp N5 &kp N6 &kp AT     &kp LEFT &kp DOWN  &kp UP &kp RIGHT &none &none
+   &none &kp N0    &kp N1 &kp N2 &kp N3 &none      &none    &none     &none  &none     &none &none
+                          &none  &none  &none      &none    &none     &none
                         >;
                 };
         };
